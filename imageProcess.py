@@ -7,7 +7,7 @@ sourceDirectory = os.getcwd()
 pixelUpdate = ctypes.CDLL(os.path.join(sourceDirectory, "pixelUpdate.dll"))
 
 # Image pixel value extraction
-image = Image.open("Sample Image/Sample3.jpg", 'r')
+image = Image.open("Sample Image/Sample1.jpg", 'r')
 pixel_data = list(image.getdata())
 
 # Width and height
@@ -47,4 +47,4 @@ new_pixel_data = list(zip(list(new_pixelR), list(new_pixelG), list(new_pixelB)))
 # Saving the Image 
 new_image = Image.new("RGB", (width, height))
 new_image.putdata(new_pixel_data)
-new_image.save("output.jpg")
+new_image.save("Sample Output/output.jpg")

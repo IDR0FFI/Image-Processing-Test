@@ -4,7 +4,7 @@
 int Avg(int* pixel, int row, int column, int width, int height){
 	int sum=0, range=1;
 	//Range value should be equal to 2 for 5x5 matrix and 1 for 3x3 matrix.
-	/*float matrix[5][5] = {
+	/*int matrix[5][5] = {
 		{-2, -2, -2, -2, -2},
 		{-2, -1, -1, -1, -2},
 		{-2, -1, 40, -1, -2},
@@ -12,7 +12,7 @@ int Avg(int* pixel, int row, int column, int width, int height){
 		{-2, -2, -2, -2, -2}
 	};*/
 
-	float matrix[3][3] = {
+	int matrix[3][3] = {
 		{1, 1, 1},
 		{1, 1, 1},
 		{1, 1, 1}
@@ -34,7 +34,7 @@ int Avg(int* pixel, int row, int column, int width, int height){
 	  		}
 		}
 	}
-	return sum/9;
+	return sum;
 }
 
 int* Update(int* pixel, int width, int height){
