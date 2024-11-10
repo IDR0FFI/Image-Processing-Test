@@ -24,7 +24,7 @@ int Avg(int* pixel, int row, int column, int width, int height){
 			if ((row+i)<0 || (column+j)<0){
 	  			sum += 0;
 	  		}
-	  		else if((row+i)>=width || (column+j)>=width){
+	  		else if((row+i)>=height || (column+j)>=width){
 	  			sum += 0;
 	  		}
 			// end
