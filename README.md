@@ -16,6 +16,7 @@ gcc -o pixelUpdate.dll -shared pixelUpdate.c
 Provide input file for the image. 
 
 High resolution image supported.
+
 ~Make sure that you do not provide images with very high resolution as it does work(maybe around 245,000 pixel).~
 
 # <hr>
