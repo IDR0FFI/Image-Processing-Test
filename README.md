@@ -13,7 +13,10 @@ gcc -o pixelUpdate.dll -shared pixelUpdate.c
 ```
 **Make sure that the gcc compiler output file and python program have the same architecture. The already compiled file is of x64.**
 
-Provide input file for the image. Make sure that you do not provide images with very high resolution as it does work(maybe around 245,000 pixel).
+Provide input file for the image. 
+
+High resolution image supported.
+~Make sure that you do not provide images with very high resolution as it does work(maybe around 245,000 pixel).~
 
 # <hr>
 
